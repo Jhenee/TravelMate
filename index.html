@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TravelMate - Your Smart Travel Companion</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <header>
+    <h1>TravelMate</h1>
+    <p>Your Smart Travel Companion</p>
+  </header>
+
+  <main>
+    <!-- Real-Time Language Translation Section -->
+    <section id="translation">
+      <h2>Real-Time Language Translation</h2>
+      <div class="translation-container">
+        <textarea id="input-text" placeholder="Enter text to translate..."></textarea>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="zh">Chinese</option>
+          <!-- Add more languages as needed -->
+        </select>
+        <button id="translate-btn">Translate</button>
+        <div id="translated-text">
+          <p>Translated Text Will Appear Here</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary Management Section -->
+    <section id="itinerary">
+      <h2>Itinerary Management</h2>
+      <div class="itinerary-container">
+        <input type="text" id="event-name" placeholder="Event Name">
+        <input type="datetime-local" id="event-time">
+        <button id="add-event">Add Event</button>
+        <ul id="itinerary-list">
+          <!-- Events will be dynamically added here -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cultural Insights Section -->
+    <section id="cultural-insights">
+      <h2>Cultural Insights</h2>
+      <div class="insights-container">
+        <p>Get insights about the culture of your current location.</p>
+        <button id="get-insights">Get Cultural Insights</button>
+        <div id="insights-display">
+          <!-- Cultural insights will be dynamically displayed here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 TravelMate. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
